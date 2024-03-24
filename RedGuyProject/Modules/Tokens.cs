@@ -35,6 +35,7 @@ namespace RedGuyMod.Modules
             LanguageAPI.Add(prefix + "MONSOON_ALTERNATE_SKIN_NAME", "Voidtouched EX");
             LanguageAPI.Add(prefix + "TYPHOON_SKIN_NAME", "");
             LanguageAPI.Add(prefix + "VOID_SKIN_NAME", "Voidborn");
+            LanguageAPI.Add(prefix + "GUERRILLA_SKIN_NAME", "Guerrilla");
             LanguageAPI.Add(prefix + "MAHORAGA_SKIN_NAME", "Divine");
             LanguageAPI.Add(prefix + "MINECRAFT_SKIN_NAME", "Minecraft");
             #endregion

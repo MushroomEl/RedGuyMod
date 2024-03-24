@@ -6,6 +6,7 @@ using System;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.Networking;
+using static RoR2.CameraTargetParams;
 
 namespace RedGuyMod.SkillStates.Ravager
 {
@@ -40,12 +41,14 @@ namespace RedGuyMod.SkillStates.Ravager
 		private uint playID;
 
 		private CrosshairUtils.OverrideRequest crosshairOverrideRequest;
+		private CameraParamsOverrideHandle camParamsOverrideHandle;
 
 		public override void OnEnter()
 		{
 			//this.muzzleflashEffectPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/DLC1/VoidSurvivor/VoidBlinkVfx.prefab").WaitForCompletion();
 			this.hitEffectPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/DLC1/VoidSurvivor/VoidSurvivorBeamImpactCorrupt.prefab").WaitForCompletion();
 			this.beamVfxPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/DLC1/VoidSurvivor/VoidSurvivorBeamCorrupt.prefab").WaitForCompletion();
+			this.camParamsOverrideHandle = Modules.CameraParams.OverrideCameraParams(base.cameraTargetParams, RavagerCameraParams.BEAM, 0.5f);
 
 			//this.beamVfxPrefab.transform.Find("Offset").Find("Mesh, Additive").GetComponent<MeshRenderer>().material = Addressables.LoadAssetAsync<Material>("RoR2/DLC1/VoidRaidCrab/matVoidRaidCrabTripleBeamSphere1.mat").WaitForCompletion();
 
@@ -115,6 +118,8 @@ namespace RedGuyMod.SkillStates.Ravager
 			this.PlayAnimation(this.animationLayerName, this.animationExitStateName);
 			Util.PlaySound("sfx_ravager_beam_end", this.gameObject);
 			AkSoundEngine.StopPlayingID(this.playID);
+
+			this.cameraTargetParams.RemoveParamsOverride(this.camParamsOverrideHandle);
 
 			if (this.crosshairOverrideRequest != null) this.crosshairOverrideRequest.Dispose();
 

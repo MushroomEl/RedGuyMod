@@ -41,7 +41,10 @@ namespace RedGuyMod.SkillStates.Ravager
             this.x1.Play();
             this.x2.Play();
 
-            this.playID = Util.PlaySound("sfx_ravager_charge_jump", this.gameObject);
+            if (!(this.penis && this.penis.skinDef && this.penis.skinDef.glowColor.a == 0f))
+            {
+                this.playID = Util.PlaySound("sfx_ravager_charge_jump", this.gameObject);
+            }
 
             this.penis.IncrementWallJump();
         }

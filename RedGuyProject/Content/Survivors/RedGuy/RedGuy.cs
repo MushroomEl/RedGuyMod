@@ -1051,6 +1051,40 @@ Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texSlashIcon"), Modules.Assets
             skins.Add(masterySkinAlternate);
             #endregion
 
+            #region GuerrillaSkin
+            SkinDef guerrillaSkin = Modules.Skins.CreateSkinDef(MainPlugin.developerPrefix + "_RAVAGER_BODY_GUERRILLA_SKIN_NAME",
+    Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texGuerrillaSkin"),
+                SkinRendererInfos(defaultRenderers, new Material[]
+                {
+                    Modules.Assets.CreateMaterial("matGuerrilla", 2f, Color.white),
+                    Modules.Assets.CreateMaterial("matGuerrilla", 2f, Color.white),
+                    null
+                }),
+    mainRenderer,
+    model);
+
+            guerrillaSkin.meshReplacements = new SkinDef.MeshReplacement[]
+            {
+                new SkinDef.MeshReplacement
+                {
+                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("meshGuerrilla"),
+                    renderer = mainRenderer
+                },
+                new SkinDef.MeshReplacement
+                {
+                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("meshMachete"),
+                    renderer = childLocator.FindChild("SwordModel").GetComponent<SkinnedMeshRenderer>()
+                },
+                new SkinDef.MeshReplacement
+                {
+                    mesh = null,
+                    renderer = childLocator.FindChild("ImpWrapModel").GetComponent<SkinnedMeshRenderer>()
+                }
+            };
+
+            skins.Add(guerrillaSkin);
+            #endregion
+
             RavagerSkinDef defaultSkinDef = ScriptableObject.CreateInstance<RavagerSkinDef>();
             defaultSkinDef.name = "rsdDefault";
             defaultSkinDef.nameToken = defaultSkin.nameToken;
@@ -1198,6 +1232,25 @@ Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texSlashIcon"), Modules.Assets
                 mahoragaSkinDef.glowColor = Color.white;
                 RavagerSkinCatalog.AddSkin(mahoragaSkinDef);
             }
+
+            RavagerSkinDef guerrillaSkinDef = ScriptableObject.CreateInstance<RavagerSkinDef>();
+            guerrillaSkinDef.name = "rsdGuerrilla";
+            guerrillaSkinDef.nameToken = guerrillaSkin.nameToken;
+            guerrillaSkinDef.basicSwingEffectPrefab = Modules.Assets.swingEffectMastery;
+            guerrillaSkinDef.bigSwingEffectPrefab = Modules.Assets.bigSwingEffectMastery;
+            guerrillaSkinDef.leapEffectPrefab = Modules.Assets.leapEffectNormal;
+            guerrillaSkinDef.slashEffectPrefab = Modules.Assets.slashImpactEffectMastery;
+            guerrillaSkinDef.bloodOrbEffectPrefab = Modules.Assets.consumeOrb;
+            guerrillaSkinDef.bloodBombEffectPrefab = Modules.Assets.bloodBombEffect;
+            guerrillaSkinDef.bloodRushActivationEffectPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/ImpBoss/ImpBossBlink.prefab").WaitForCompletion();
+            guerrillaSkinDef.bloodOrbOverlayMaterial = Addressables.LoadAssetAsync<Material>("RoR2/Base/Imp/matImpDissolve.mat").WaitForCompletion();
+            guerrillaSkinDef.bloodRushOverlayMaterial = Modules.Assets.bloodOverlayMat;
+            guerrillaSkinDef.consumeSoundString = "sfx_ravager_consume";
+            guerrillaSkinDef.healSoundString = "sfx_ravager_steam";
+            guerrillaSkinDef.electricityMat = Modules.Assets.mainAssetBundle.LoadAsset<Material>("matEmpty");
+            guerrillaSkinDef.swordElectricityMat = Modules.Assets.mainAssetBundle.LoadAsset<Material>("matEmpty");
+            guerrillaSkinDef.glowColor = new Color(0f, 0f, 0f, 0f);
+            RavagerSkinCatalog.AddSkin(guerrillaSkinDef);
 
             skinController.skins = skins.ToArray();
         }

@@ -38,7 +38,7 @@ namespace RedGuyMod.SkillStates.Ravager
             base.OnEnter();
             if (this.penis) this.penis.projectilesDeleted = 0;
             this.duration = this.baseDuration / this.attackSpeedStat;
-            this.camParamsOverrideHandle = Modules.CameraParams.OverrideCameraParams(base.cameraTargetParams, RavagerCameraParams.AIM, 5f);
+            this.camParamsOverrideHandle = Modules.CameraParams.OverrideCameraParams(base.cameraTargetParams, RavagerCameraParams.AIM, 1f);
             this.allySucc = Modules.Config.allySucc.Value;
             this.animator = this.GetModelAnimator();
 

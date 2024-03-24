@@ -19,7 +19,11 @@ namespace RedGuyMod.SkillStates.Ravager
             this.GetModelAnimator().SetFloat("leapDir", this.inputBank.aimDirection.y);
             base.PlayAnimation("FullBody, Override Soft", "Leap");
             Util.PlaySound("sfx_ravager_leap", this.gameObject);
-            Util.PlaySound("sfx_ravager_sonido", this.gameObject);
+
+            if (!(this.penis && this.penis.skinDef && this.penis.skinDef.glowColor.a == 0f))
+            {
+                Util.PlaySound("sfx_ravager_sonido", this.gameObject);
+            }
         }
 
         public override void FixedUpdate()

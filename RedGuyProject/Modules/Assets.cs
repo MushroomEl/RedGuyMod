@@ -45,6 +45,7 @@ namespace RedGuyMod.Modules
         internal static GameObject leapEffect;
         internal static GameObject leapEffectMastery;
         internal static GameObject leapEffectVoid;
+        internal static GameObject leapEffectNormal;
 
         internal static GameObject slamImpactEffect;
         internal static GameObject bloodBombEffect;
@@ -382,6 +383,20 @@ namespace RedGuyMod.Modules
             leapEffectVoid.GetComponentInChildren<Light>().color = new Color(157f / 255f, 42f / 255f, 179 / 255f);
 
             AddNewEffectDef(leapEffectVoid);
+
+            leapEffectNormal = PrefabAPI.InstantiateClone(RoR2.LegacyResourcesAPI.Load<GameObject>("Prefabs/Effects/BrotherDashEffect"), "RavagerDashEffectNormal", true);
+            leapEffectNormal.AddComponent<NetworkIdentity>();
+            leapEffectNormal.GetComponent<EffectComponent>().applyScale = true;
+            leapEffectNormal.transform.localScale *= 0.35f;
+
+            //leapEffectNormal.transform.Find("Dash").GetComponent<ParticleSystemRenderer>().material = Addressables.LoadAssetAsync<Material>("RoR2/DLC1/VoidSurvivor/matVoidSurvivorMeleeSlash.mat").WaitForCompletion();
+            leapEffectNormal.transform.Find("Dash").transform.localPosition = new Vector3(0f, 0f, -8f);
+            leapEffectNormal.transform.Find("Donut").transform.localScale = Vector3.one * 0.25f;
+            //leapEffectNormal.transform.Find("Donut").GetComponent<ParticleSystemRenderer>().material = Addressables.LoadAssetAsync<Material>("RoR2/DLC1/DeepVoidPortal/matDeepVoidPortalOpaque.mat").WaitForCompletion();
+            leapEffectNormal.transform.Find("Donut, Distortion").transform.localScale = Vector3.one * 0.25f;
+            leapEffectNormal.GetComponentInChildren<Light>().enabled = false;
+
+            AddNewEffectDef(leapEffectNormal);
 
             genericBloodExplosionEffect = CreateBloodExplosionEffect("RavagerGenericBloodExplosion", Addressables.LoadAssetAsync<Material>("RoR2/Base/Common/VFX/matBloodGeneric.mat").WaitForCompletion());
             largeBloodExplosionEffect = CreateBloodExplosionEffect("RavagerLargeBloodExplosion", Addressables.LoadAssetAsync<Material>("RoR2/Base/Common/VFX/matBloodHumanLarge.mat").WaitForCompletion(), 3f);
