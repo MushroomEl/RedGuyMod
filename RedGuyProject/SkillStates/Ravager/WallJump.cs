@@ -62,7 +62,7 @@ namespace RedGuyMod.SkillStates.Ravager
 								return;
 							}
 
-							if (!this.penis.draining) this.penis.blinkReady = false;
+							if (!this.penis.draining || (this.penis.draining && this.penis.inGrab)) this.penis.blinkReady = false;
 
 							EntityStateMachine.FindByCustomName(this.gameObject, "Body").SetInterruptState(new ChargeBlink(), InterruptPriority.Any);
 

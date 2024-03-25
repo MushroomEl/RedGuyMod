@@ -103,7 +103,9 @@ namespace RedGuyMod.SkillStates.Ravager
 
         protected override void ClearHitStop()
         {
-            base.ClearHitStop();
+            if (this.penis.passive.isBlink) base.characterMotor.velocity = this.storedVelocity * 0.5f;
+            base.ConsumeHitStopCachedState(this.hitStopCachedState, base.characterMotor, this.animator);
+            this.inHitPause = false;
 
             if (this.swingEffectInstance)
             {

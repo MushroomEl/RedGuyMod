@@ -816,6 +816,7 @@ namespace RedGuyMod.SkillStates.Ravager
 										}
 									}*/
 
+									this.penis.RefreshBlink();
 									EffectManager.SpawnEffect(Modules.Assets.bloodBombEffect, new EffectData
 									{
 										origin = hurtBox.transform.position,
