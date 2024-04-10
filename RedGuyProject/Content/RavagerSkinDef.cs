@@ -22,6 +22,8 @@ public class RavagerSkinDef : ScriptableObject
     public string consumeSoundString = "";
     public string healSoundString = "";
 
+    public bool useAltAnimSet = false;
+
     public Material electricityMat;
     public Material swordElectricityMat;
     public Color glowColor = Color.red;

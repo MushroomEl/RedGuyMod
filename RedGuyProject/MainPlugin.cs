@@ -36,7 +36,7 @@ namespace RedGuyMod
     {
         public const string MODUID = "com.rob.Ravager";
         public const string MODNAME = "Ravager";
-        public const string MODVERSION = "1.3.16";
+        public const string MODVERSION = "1.3.18";
 
         public const string developerPrefix = "ROB";
 
@@ -52,6 +52,7 @@ namespace RedGuyMod
         private void Awake()
         {
             instance = this;
+            Modules.Files.PluginInfo = this.Info;
 
             Modules.Config.myConfig = Config;
 
@@ -61,7 +62,7 @@ namespace RedGuyMod
             Modules.CameraParams.InitializeParams();
             Modules.States.RegisterStates();
             Modules.Projectiles.RegisterProjectiles();
-            Modules.Tokens.AddTokens();
+            new Modules.LanguageTokens();
             Modules.ItemDisplays.PopulateDisplays();
 
             NetworkingAPI.RegisterMessageType<Content.SyncBloodWell>();

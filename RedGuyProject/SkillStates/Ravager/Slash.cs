@@ -111,19 +111,13 @@ namespace RedGuyMod.SkillStates.Ravager
 
         protected override void PlayAttackAnimation()
         {
-            if (this.swingIndex == 1) base.PlayCrossfade("Gesture, Override", "Slash2", "Slash.playbackRate", this.duration, 0.1f);
-            else base.PlayCrossfade("Gesture, Override", "Slash1", "Slash.playbackRate", this.duration, 0.1f);
-            return;
-            if (this.empowered)
-            {
-                if (this.swingIndex == 1) base.PlayAnimation("Gesture, Override", "Slash2X", "Slash.playbackRate", this.duration);
-                else base.PlayAnimation("Gesture, Override", "Slash1X", "Slash.playbackRate", this.duration);
-            }
-            else
-            {
-                if (this.swingIndex == 1) base.PlayCrossfade("Gesture, Override", "Slash2", "Slash.playbackRate", this.duration, 0.1f);
-                else base.PlayCrossfade("Gesture, Override", "Slash1", "Slash.playbackRate", this.duration, 0.1f);
-            }
+            string animString = "Slash1";
+
+            if (this.swingIndex == 1) animString = "Slash2";
+
+            if (this.isCrit) animString += "Crit";
+
+            base.PlayCrossfade("Gesture, Override", animString, "Slash.playbackRate", this.duration, 0.1f);
         }
 
         protected override void SetNextState()

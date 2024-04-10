@@ -1,0 +1,111 @@
+{
+	strings: {
+ 	 "ROB_RAVAGER_BODY_NAME": "Ravager",
+ 	 "ROB_RAVAGER_BODY_DESCRIPTION": "The Ravager is an agile melee bruiser who heals off slain foes to stay in the thick of it.<color=#CCD3E0>\n\n< ! > Charging wall jumps is the best way to deal with flying enemies.\n\n< ! > Cleave is handy for cancelling high damage attacks as well as keeping up the damage output.\n\n< ! > Coagulate can be helpful in a pinch if you're not sure you can get the Blood Well filled, but it can also be used passively to stay topped off.\n\n< ! > Brutalize heals on demand so be sure to grab and consume something if you're getting low.",
+ 	 "ROB_RAVAGER_BODY_SUBTITLE": "Callous Usurper",
+ 	 "ROB_RAVAGER_BODY_LORE": "The Ravager was not born with a special power...\n\n...instead, he was born with a Cursed Bloodspilled Katana but one day he went to the Poop Dimension and was met with an evil power.....\n\nFinally escaped from the Poop Dimension and wielding this awesome evil power himself he has come in the Petrichor V for destroid the universeю",
+ 	 "ROB_RAVAGER_BODY_OUTRO_FLAVOR": "..and so he left, in search of new lands to desecrate.",
+ 	 "ROB_RAVAGER_BODY_OUTRO_FAILURE": "..and so he vanished, his ridiculous violence finally coming to an end.",
+
+ 	 "ROB_RAVAGER_BODY_DEFAULT_SKIN_NAME": "Default",
+ 	 "ROB_RAVAGER_BODY_MONSOON_SKIN_NAME": "Voidtouched",
+     "ROB_RAVAGER_BODY_MONSOON_ALTERNATE_SKIN_NAME": "Voidtouched EX",
+     "ROB_RAVAGER_BODY_TYPHOON_SKIN_NAME": "[ДАННЫЕ УДАЛЕНЫ]",
+ 	 "ROB_RAVAGER_BODY_VOID_SKIN_NAME": "Voidborn",
+	 "ROB_RAVAGER_BODY_SELLSWORD_SKIN_NAME": "Sellsword",
+	 "ROB_RAVAGER_BODY_GUERRILLA_SKIN_NAME": "Guerrilla",
+ 	 "ROB_RAVAGER_BODY_MAHORAGA_SKIN_NAME": "Divine",
+ 	 "ROB_RAVAGER_BODY_MINECRAFT_SKIN_NAME": "Minecraft",
+
+     "ROB_RAVAGER_BODY_BLOODWELL_NAME": "Blood Well",
+     "ROB_RAVAGER_BODY_BLOODWELL_DESCRIPTION": "The Ravager stores up <style=cIsHealth>blood</style> with his strikes, draining when full to heal you for <style=cIsHealing>75% missing health</style> and <style=cIsDamage>empower your skills</style> temporarily.",
+     "ROB_RAVAGER_BODY_BLOODWELL2_NAME": "Ichor Canister",
+     "ROB_RAVAGER_BODY_BLOODWELL2_DESCRIPTION": "The Ravager stores up <style=cIsHealth>blood</style> with his strikes, draining when full to heal you for <style=cIsHealing>100% max health</style> and <style=cIsDamage>empower your skills</style> temporarily. <style=cIsHealth>Drains faster while attacking.</style>",
+     "ROB_RAVAGER_BODY_PARASITE_NAME": "The Parasite",
+     "ROB_RAVAGER_BODY_PARASITE_DESCRIPTION": "<style=cIsHealth>It hungers....</style>",
+ 	 "ROB_RAVAGER_BODY_PASSIVE_NAME": "Physical Prowess",
+ 	 "ROB_RAVAGER_BODY_PASSIVE_DESCRIPTION": "The Ravager can <style=cIsUtility>jump off walls</style> and <style=cIsHealth>enemies</style>. Wall jumps can be charged for a <style=cIsDamage>mighty leap</style>.",
+     "ROB_RAVAGER_BODY_PASSIVE2_NAME": "Twisted Mutation",
+     "ROB_RAVAGER_BODY_PASSIVE2_DESCRIPTION": "Jump in midair to charge up a <style=cIsUtility>forward blink</style>, once per jump. Landing <style=cIsDamage>melee hits</style> refreshes this ability.",
+     "ROB_RAVAGER_BODY_PASSIVE3_NAME": "Twisted Mutation (Legacy)",
+     "ROB_RAVAGER_BODY_PASSIVE3_DESCRIPTION": "<style=cIsHealth>Costs 5% current health.</style> Jump in midair to <style=cIsUtility>blink forward</style>, once per jump. Landing <style=cIsDamage>melee hits</style> refreshes this ability.",
+     "ROB_RAVAGER_BODY_CONFIRM_NAME": "Confirm",
+ 	 "ROB_RAVAGER_BODY_CONFIRM_DESCRIPTION": "Proceed with the current skill.",
+ 	 "ROB_RAVAGER_BODY_CANCEL_NAME": "Cancel",
+ 	 "ROB_RAVAGER_BODY_CANCEL_DESCRIPTION": "Cancel the current skill.",
+
+ 	 "ROB_RAVAGER_BODY_PRIMARY_SLASH_NAME": "Hack",
+ 	 "ROB_RAVAGER_BODY_PRIMARY_SLASH_DESCRIPTION": "Swing forward for <style=cIsDamage>230% damage</style>. Use while <style=cIsUtility>charging a wall jump</style> to instead enter a <style=cIsDamage>hold stance</style>.",
+     "ROB_RAVAGER_BODY_PRIMARY_SLASHCOMBO_NAME": "Dismantle",
+     "ROB_RAVAGER_BODY_PRIMARY_SLASHCOMBO_DESCRIPTION": "Swing forward for <style=cIsDamage>180% damage</style>. Every 3rd hit <style=cIsUtility>stuns</style> and deals <style=cIsDamage>390% damage</style>.",
+	 
+ 	 "ROB_RAVAGER_BODY_SECONDARY_SPINSLASH_NAME": "Cleave",
+ 	 "ROB_RAVAGER_BODY_SECONDARY_SPINSLASH_DESCRIPTION": "Lunge forward and perform a wide, <style=cIsUtility>stunning</style> slash for <style=cIsDamage>500% damage</style>.",
+
+	 "ROB_RAVAGER_BODY_UTILITY_HEAL_NAME": "Coagulate",
+	 "ROB_RAVAGER_BODY_UTILITY_HEAL_DESCRIPTION": "Instantly drain the <style=cIsHealth>Blood Well</style>, <style=cIsHealing>healing yourself</style> with the blood consumed.",
+	 "ROB_RAVAGER_BODY_UTILITY_BEAM_NAME": "Nullify",
+	 "ROB_RAVAGER_BODY_UTILITY_BEAM_DESCRIPTION": "<style=cIsHealth>Absorb</style> incoming <style=cIsUtility>projectiles</style> to charge up a devastating blast that deals up to <style=cIsDamage>5000% damage</style> when fully charged.",
+     "ROB_RAVAGER_BODY_UTILITY_SWAP_NAME": "Boogie Woogie",
+     "ROB_RAVAGER_BODY_UTILITY_SWAP_DESCRIPTION": "Switch places with <style=cIsUtility>any entity</style>.",
+	 "ROB_RAVAGER_BODY_UTILITY_SNATCH_NAME": "Snatch",
+	 "ROB_RAVAGER_BODY_UTILITY_SNATCH_DESCRIPTION": "Send forth your <style=cIsDamage>imp arm</style> and grasp a distant enemy within its clutches, <style=cIsUtility>pulling yourself toward whatever it hits</style>.",
+
+	 "ROB_RAVAGER_BODY_SPECIAL_GRAB_NAME": "Brutalize",
+	 "ROB_RAVAGER_BODY_SPECIAL_GRAB_DESCRIPTION": "Lunge and <style=cIsUtility>grab</style> nearby enemies, then slam down for <style=cIsDamage>1000% damage</style>. If this kills, <style=cIsHealth>consume</style> them to restore <style=cIsHealing>10% max health</style>.",
+	 "ROB_RAVAGER_BODY_SPECIAL_GRAB_SCEPTER_NAME": "Vicious Assault",
+	 "ROB_RAVAGER_BODY_SPECIAL_GRAB_SCEPTER_DESCRIPTION": "Throw a grenade that <style=cIsUtility>stuns</style> enemies for <style=cIsDamage>1000% damage</style>. <style=cIsUtility>You can hold up to two.</style>" + Helpers.ScepterDescription("Throw a molotov that bursts into flames instead.",
+     "ROB_RAVAGER_BODY_SPECIAL_PUNCH_NAME": "Pummel",
+     "ROB_RAVAGER_BODY_SPECIAL_PUNCH_DESCRIPTION": "Lunge and <style=cIsUtility>punch</style>, dealing <style=cIsDamage>1250% damage</style> with a <style=cIsUtility>shockwave</style> through them for the same damage. If this kills, <style=cIsHealth>consume</style> them to restore <style=cIsHealing>10% max health</style>.",
+	 "ROB_RAVAGER_BODY_SPECIAL_THROW_NAME": "Hurl",
+	 "ROB_RAVAGER_BODY_SPECIAL_THROW_DESCRIPTION": "Lunge and <style=cIsUtility>grab</style> nearby enemies, then throw them for <style=cIsDamage>1000% damage</style> on impact. If this kills, <style=cIsHealth>consume</style> them to restore <style=cIsHealing>10% max health</style>.",
+ 
+     "KEYWORD_REDGUY_M12": "<style=cKeywordName>Hold Stance</style><style=cSub>While charging a wall jump, enter a <style=cIsUtility>hold stance</style>. Release to swing for up to <style=cIsDamage>5x damage</style> based on velocity.",
+	 "KEYWORD_REDGUY_M1": "<style=cKeywordName>Empowered Effect</style><style=cSub>Swings faster.",
+	 "KEYWORD_REDGUY_M2": "<style=cKeywordName>Empowered Effect (Ground)</style><style=cSub>Successful hits <style=cIsUtility>lunge farther</style> and <style=cIsDamage>boost damage by 50%</style>, stacking.",
+	 "KEYWORD_REDGUY_M2B": "<style=cKeywordName>Empowered Effect (Air)</style><style=cSub>Deals more damage to <style=cIsUtility>low health enemies</style> and lunges farther.",
+	 "KEYWORD_REDGUY_HEAL":  "<style=cKeywordName>Empowered Effect</style><style=cSub>Explodes for <style=cIsDamage>2400% damage</style>.",
+	 "KEYWORD_REDGUY_BEAM":  "<style=cKeywordName>Empowered Effect</style><style=cSub>Charges much faster.",
+	 "KEYWORD_REDGUY_GRAB": "<style=cKeywordName>Empowered Effect</style><style=cSub>Can grab bosses. Drags enemies along the ground, dealing damage over time.",
+	 "KEYWORD_REDGUY_GRAB2": "<style=cKeywordName>Bosses</style><style=cSub>Against bosses, <style=cIsDamage>cling</style> onto them instead and go goblin mode.",
+     "KEYWORD_REDGUY_PUNCH": "<style=cKeywordName>Empowered Effect</style><style=cSub>Unleashes a barrage of punches, dealing heavy damage.",   
+
+	 "ROB_RAVAGER_BODY_UNLOCKABLE_UNLOCKABLE_NAME": "A Dream of Armageddon",
+	 "ROB_RAVAGER_BODY_UNLOCKABLE_ACHIEVEMENT_NAME": "A Dream of Armageddon",
+	 "ROB_RAVAGER_BODY_UNLOCKABLE_ACHIEVEMENT_DESC": "Apply 50 stacks of Bleed on one enemy.",
+	 
+	 "ROB_RAVAGER_BODY_MONSOONUNLOCKABLE_UNLOCKABLE_NAME": "Ravager: Mastery",
+	 "ROB_RAVAGER_BODY_MONSOONUNLOCKABLE_ACHIEVEMENT_NAME": "Ravager: Mastery",
+	 "ROB_RAVAGER_BODY_MONSOONUNLOCKABLE_ACHIEVEMENT_DESC": "As Ravager, beat the game or obliterate on Monsoon.",
+	 
+     "ROB_RAVAGER_BODY_TYPHOON_UNLOCKABLE_UNLOCKABLE_NAME": "Ravager: Grand Mastery",
+     "ROB_RAVAGER_BODY_TYPHOON_UNLOCKABLE_ACHIEVEMENT_NAME": "Ravager: Grand Mastery",
+     "ROB_RAVAGER_BODY_TYPHOON_UNLOCKABLE_ACHIEVEMENT_DESC": "As Ravager, beat the game or obliterate on Typhoon or Eclipse.\n<color=#8888>Counts any difficulty Typhoon or higher</color>",
+	 
+	 "ROB_RAVAGER_BODY_PUNCH_UNLOCKABLE_UNLOCKABLE_NAME": "Ravager: In a Trail of Fire",
+     "ROB_RAVAGER_BODY_PUNCH_UNLOCKABLE_ACHIEVEMENT_NAME": "Ravager: In a Trail of Fire",
+     "ROB_RAVAGER_BODY_PUNCH_UNLOCKABLE_ACHIEVEMENT_DESC": "As Ravager, slam an enemy into the ground 3+ times in one grab.",
+     
+	 "ROB_RAVAGER_BODY_THROW_UNLOCKABLE_UNLOCKABLE_NAME": "Ravager: Hungry Fella",
+     "ROB_RAVAGER_BODY_THROW_UNLOCKABLE_ACHIEVEMENT_NAME": "Ravager: Hungry Fella",
+     "ROB_RAVAGER_BODY_THROW_UNLOCKABLE_ACHIEVEMENT_DESC": "As Ravager, consume 8 or more enemies at once.",
+	 
+	 "ROB_RAVAGER_BODY_BEAM_UNLOCKABLE_UNLOCKABLE_NAME": "Ravager: Calm as an Ocean",
+	 "ROB_RAVAGER_BODY_BEAM_UNLOCKABLE_ACHIEVEMENT_NAME": "Ravager: Calm as an Ocean",
+	 "ROB_RAVAGER_BODY_BEAM_UNLOCKABLE_ACHIEVEMENT_DESC": "As Ravager, complete a stage without filling the Blood Well.",
+	 
+	 "ROB_RAVAGER_BODY_WALLJUMP_UNLOCKABLE_UNLOCKABLE_NAME": "Ravager: Maximum Monkey",
+	 "ROB_RAVAGER_BODY_WALLJUMP_UNLOCKABLE_ACHIEVEMENT_NAME": "Ravager: Maximum Monkey",
+	 "ROB_RAVAGER_BODY_WALLJUMP_UNLOCKABLE_ACHIEVEMENT_DESC": "As Ravager, wall jump 20 times without touching the ground.",
+	 
+	 "ROB_RAVAGER_BODY_SUIT_UNLOCKABLE_UNLOCKABLE_NAME": "Ravager: All My Fellas",
+	 "ROB_RAVAGER_BODY_SUIT_UNLOCKABLE_ACHIEVEMENT_NAME": "Ravager: All My Fellas",
+	 "ROB_RAVAGER_BODY_SUIT_UNLOCKABLE_ACHIEVEMENT_DESC": "As Ravager, have 15 allies alive at once.",
+	 
+	 "ROB_RAVAGER_BODY_VOID_UNLOCKABLE_UNLOCKABLE_NAME": "Ravager: From The Nothing",
+	 "ROB_RAVAGER_BODY_VOID_UNLOCKABLE_ACHIEVEMENT_NAME": "Ravager: From The Nothing",
+	 "ROB_RAVAGER_BODY_VOID_UNLOCKABLE_ACHIEVEMENT_DESC": "As Ravager, escape the Planetarium.",
+
+	 "ROB_RAVAGER_BODY_LOADOUT_SKILL_MISC": "Passive",
+	 }
+}

@@ -168,7 +168,11 @@ namespace RedGuyMod.Content.Components
 
         public void RefreshBlink()
         {
-            characterBody.characterMotor.jumpCount--;
+            if (this.passive.isBlink || this.passive.isLegacyBlink)
+            {
+                this.characterBody.characterMotor.jumpCount--;
+                if (this.characterBody.characterMotor.jumpCount < 0) this.characterBody.characterMotor.jumpCount = 0;
+            }
         }
 
         public void IncrementWallJump()
@@ -282,6 +286,15 @@ namespace RedGuyMod.Content.Components
                     {
                         i.color = this.cachedSkinDef.glowColor;
                     }
+                }
+
+                if (this.cachedSkinDef.useAltAnimSet)
+                {
+                    if (this.animator) this.animator.SetLayerWeight(this.animator.GetLayerIndex("Body, Alt"), 1f);
+                }
+                else
+                {
+                    if (this.animator) this.animator.SetLayerWeight(this.animator.GetLayerIndex("Body, Alt"), 0f);
                 }
             }
             else this.cachedSkinDef = RavagerSkinCatalog.GetSkin(0);

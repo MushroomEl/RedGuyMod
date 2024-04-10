@@ -58,7 +58,7 @@ namespace RedGuyMod.SkillStates.Ravager
             base.OnHitEnemyAuthority(amount);
             if (this.penis)
             {
-                this.penis.FillGauge(0.5f + (amount * 0.5f) + Util.Remap(this.charge, 0f, 1f, 0f, 3f));
+                this.penis.FillGauge(0.5f + (amount * 0.5f) + Util.Remap(this.charge, 0f, 1f, 0f, 1f));
                 this.penis.RefreshBlink();
             }
         }

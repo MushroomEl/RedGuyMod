@@ -1,4 +1,5 @@
 # Ravager
+Looking for translators!!!!
 - Adds the Ravager, an original new character
 - Fully functional base kit with an unlockable mastery skin
 - Fully multiplayer compatible!
@@ -83,7 +84,11 @@ nayDPz - Grab code
 
 Swuff - Feedback, character icon outline
 
-Moffein, TheTimeSweeper - Loads of valuable gameplay feedback
+Moffein - Feedback, bug reports, translation code
+
+TheTimeSweeper - Loads of valuable gameplay feedback
+
+Mark Lecarde - RU translation
 
 Redacted - Artistic feedback
 
@@ -100,6 +105,20 @@ Redacted - Artistic feedback
 ___
 
 ## Changelog
+
+`1.3.18`
+- Tweaked animations for Sellsword and Guerrilla skins
+- Added a critical attack animation
+- Added a subtle animation to Twisted Mutation, along with an indicator showing where the blink will end up
+- Reduced the amount of bonus meter gained from a full speed hold slash- this was way too strong
+
+`1.3.17`
+- Fixed language files
+
+`1.3.16`
+- Added skin: Sellsword
+- Added skin: Guerrilla (locked behind cursed config as it's a Driver skin port)
+- Added translation support featuring a Russian translation by Mark Lecarde, big thanks to Moffein as well for making this easy!
 
 `1.3.15`
 - Brutalize's boss cling is now blacklisted on some bosses

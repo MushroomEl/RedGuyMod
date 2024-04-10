@@ -27,6 +27,7 @@ namespace RedGuyMod.SkillStates.BaseStates
         protected float attackRecoil = 0.75f;
         protected float hitHopVelocity = 4f;
         protected bool smoothHitstop = false;
+        protected bool isCrit;
 
         protected string swingSoundString = "";
         protected string hitSoundString = "";
@@ -51,6 +52,7 @@ namespace RedGuyMod.SkillStates.BaseStates
 
         public override void OnEnter()
         {
+            this.isCrit = Util.CheckRoll(this.characterBody.crit);
             base.OnEnter();
             this.duration = this.baseDuration / this.attackSpeedStat;
             this.earlyExitTime = this.baseEarlyExitTime;// / this.attackSpeedStat;
@@ -88,7 +90,7 @@ namespace RedGuyMod.SkillStates.BaseStates
             this.attack.forceVector = this.bonusForce;
             this.attack.pushAwayForce = this.pushForce;
             this.attack.hitBoxGroup = hitBoxGroup;
-            this.attack.isCrit = base.RollCrit();
+            this.attack.isCrit = this.isCrit;
             this.attack.impactSound = this.impactSound;
         }
 

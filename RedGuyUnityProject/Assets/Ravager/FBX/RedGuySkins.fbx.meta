@@ -83,6 +83,8 @@ ModelImporter:
     100154: upperarm.l
     100156: upperarm.r
     100158: weapon.r
+    100160: meshLaserMachete
+    100162: meshSellsword
     400000: Armature
     400002: base
     400004: calf.l
@@ -163,15 +165,22 @@ ModelImporter:
     400154: upperarm.l
     400156: upperarm.r
     400158: weapon.r
+    400160: meshLaserMachete
+    400162: meshSellsword
     2100000: matSlugger.002
     2100002: matSlugger.001
+    2100004: matSlugger.003
     4300000: meshGuerrilla
     4300002: meshMachete
+    4300004: meshLaserMachete
+    4300006: meshSellsword
     9500000: //RootNode
     10800000: Sun
     10800002: Sun.001
     13700000: meshGuerrilla
     13700002: meshMachete
+    13700004: meshLaserMachete
+    13700006: meshSellsword
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -224,7 +233,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 0
-    previousCalculatedGlobalScale: 0.01
+    previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60

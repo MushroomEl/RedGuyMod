@@ -1051,6 +1051,40 @@ Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texSlashIcon"), Modules.Assets
             skins.Add(masterySkinAlternate);
             #endregion
 
+            #region SellswordSkin
+            SkinDef sellswordSkin = Modules.Skins.CreateSkinDef(MainPlugin.developerPrefix + "_RAVAGER_BODY_SELLSWORD_SKIN_NAME",
+    Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texSellswordIcon"),
+                SkinRendererInfos(defaultRenderers, new Material[]
+                {
+                    Modules.Assets.CreateMaterial("matSellsword", 0.4f, Color.white),
+                    Modules.Assets.CreateMaterial("matSellsword", 6f, Color.white),
+                    null
+                }),
+    mainRenderer,
+    model);
+
+            sellswordSkin.meshReplacements = new SkinDef.MeshReplacement[]
+            {
+                new SkinDef.MeshReplacement
+                {
+                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("meshSellsword"),
+                    renderer = mainRenderer
+                },
+                new SkinDef.MeshReplacement
+                {
+                    mesh = Modules.Assets.mainAssetBundle.LoadAsset<Mesh>("meshLaserMachete"),
+                    renderer = childLocator.FindChild("SwordModel").GetComponent<SkinnedMeshRenderer>()
+                },
+                new SkinDef.MeshReplacement
+                {
+                    mesh = null,
+                    renderer = childLocator.FindChild("ImpWrapModel").GetComponent<SkinnedMeshRenderer>()
+                }
+            };
+
+            skins.Add(sellswordSkin);
+            #endregion
+
             #region GuerrillaSkin
             SkinDef guerrillaSkin = Modules.Skins.CreateSkinDef(MainPlugin.developerPrefix + "_RAVAGER_BODY_GUERRILLA_SKIN_NAME",
     Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texGuerrillaSkin"),
@@ -1082,7 +1116,7 @@ Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texSlashIcon"), Modules.Assets
                 }
             };
 
-            skins.Add(guerrillaSkin);
+            if (Modules.Config.cursed.Value) skins.Add(guerrillaSkin);
             #endregion
 
             RavagerSkinDef defaultSkinDef = ScriptableObject.CreateInstance<RavagerSkinDef>();
@@ -1250,7 +1284,28 @@ Modules.Assets.mainAssetBundle.LoadAsset<Sprite>("texSlashIcon"), Modules.Assets
             guerrillaSkinDef.electricityMat = Modules.Assets.mainAssetBundle.LoadAsset<Material>("matEmpty");
             guerrillaSkinDef.swordElectricityMat = Modules.Assets.mainAssetBundle.LoadAsset<Material>("matEmpty");
             guerrillaSkinDef.glowColor = new Color(0f, 0f, 0f, 0f);
+            guerrillaSkinDef.useAltAnimSet = true;
             RavagerSkinCatalog.AddSkin(guerrillaSkinDef);
+
+            RavagerSkinDef sellswordSkinDef = ScriptableObject.CreateInstance<RavagerSkinDef>();
+            sellswordSkinDef.name = "rsdSellsword";
+            sellswordSkinDef.nameToken = sellswordSkin.nameToken;
+            sellswordSkinDef.basicSwingEffectPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Merc/MercSwordFinisherSlash.prefab").WaitForCompletion();
+            sellswordSkinDef.bigSwingEffectPrefab = Modules.Assets.bigSwingEffectBlue;
+            sellswordSkinDef.leapEffectPrefab = Modules.Assets.leapEffectNormal;
+            sellswordSkinDef.slashEffectPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Merc/OmniImpactVFXSlashMerc.prefab").WaitForCompletion();
+            sellswordSkinDef.bloodOrbEffectPrefab = Modules.Assets.consumeOrb;
+            sellswordSkinDef.bloodBombEffectPrefab = Modules.Assets.bloodBombEffect;
+            sellswordSkinDef.bloodRushActivationEffectPrefab = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/ImpBoss/ImpBossBlink.prefab").WaitForCompletion();
+            sellswordSkinDef.bloodOrbOverlayMaterial = Addressables.LoadAssetAsync<Material>("RoR2/Base/Imp/matImpDissolve.mat").WaitForCompletion();
+            sellswordSkinDef.bloodRushOverlayMaterial = Modules.Assets.bloodOverlayMat;
+            sellswordSkinDef.consumeSoundString = "sfx_ravager_consume";
+            sellswordSkinDef.healSoundString = "sfx_ravager_steam";
+            sellswordSkinDef.electricityMat = Addressables.LoadAssetAsync<Material>("RoR2/Base/Mage/matMageMatrixDirectionalLightning.mat").WaitForCompletion();
+            sellswordSkinDef.swordElectricityMat = Addressables.LoadAssetAsync<Material>("RoR2/Base/Mage/matMageMatrixDirectionalLightning.mat").WaitForCompletion();
+            sellswordSkinDef.glowColor = Color.blue;
+            sellswordSkinDef.useAltAnimSet = true;
+            RavagerSkinCatalog.AddSkin(sellswordSkinDef);
 
             skinController.skins = skins.ToArray();
         }
@@ -1733,7 +1788,7 @@ localScale = new Vector3(0.13457F, 0.19557F, 0.19557F)
             {
                 foreach (LanguageTextMeshController i in self.gameObject.GetComponentsInChildren<LanguageTextMeshController>())
                 {
-                    if (i && i.token == "LOADOUT_SKILL_MISC") i.token = "Passive";
+                    if (i && i.token == "LOADOUT_SKILL_MISC") i.token = "ROB_RAVAGER_BODY_LOADOUT_SKILL_MISC";
                 }
             }
         }

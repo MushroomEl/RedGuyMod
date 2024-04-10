@@ -35,6 +35,8 @@ namespace RedGuyMod.Modules
         internal static GameObject bigSwingEffect;
         internal static GameObject slashImpactEffect;
 
+        internal static GameObject bigSwingEffectBlue;
+
         internal static GameObject swingEffectMastery;
         internal static GameObject bigSwingEffectMastery;
         internal static GameObject slashImpactEffectMastery;
@@ -52,6 +54,7 @@ namespace RedGuyMod.Modules
         internal static GameObject cssEffect;
 
         internal static GameObject punchImpactEffect;
+        internal static GameObject blinkPredictionEffect;
 
         internal static GameObject genericBloodExplosionEffect;
         internal static GameObject largeBloodExplosionEffect;
@@ -204,6 +207,12 @@ namespace RedGuyMod.Modules
             sex.startLifetimeMultiplier = 0.6f;
             bigSwingEffect.transform.GetChild(0).localScale = Vector3.one * 2f;
             MainPlugin.Destroy(bigSwingEffect.GetComponent<EffectComponent>());
+
+            bigSwingEffectBlue = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Merc/MercSwordSlashWhirlwind.prefab").WaitForCompletion().InstantiateClone("RavagerBigSwordSwingBlue");
+            sex = bigSwingEffectBlue.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().main;
+            sex.startLifetimeMultiplier = 0.6f;
+            bigSwingEffectBlue.transform.GetChild(0).localScale = Vector3.one * 2f;
+            MainPlugin.Destroy(bigSwingEffectBlue.GetComponent<EffectComponent>());
 
             bigSwingEffectVoid = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Merc/MercSwordSlashWhirlwind.prefab").WaitForCompletion().InstantiateClone("RavagerBigSwordSwingVoid");
             bigSwingEffectVoid.transform.GetChild(0).gameObject.GetComponent<ParticleSystemRenderer>().material = Addressables.LoadAssetAsync<Material>("RoR2/DLC1/VoidSurvivor/matVoidSurvivorMeleeSlash.mat").WaitForCompletion();
@@ -569,6 +578,11 @@ namespace RedGuyMod.Modules
             beamSphereEffect.transform.localScale = Vector3.one * 0.7f;
             beamSphereEffect.GetComponent<MeshRenderer>().material = CreateMaterial("matChargeSphere", 15f, Color.red);
             beamSphereEffect.GetComponentInChildren<ParticleSystemRenderer>().trailMaterial = redTrailMat;
+
+
+            blinkPredictionEffect = mainAssetBundle.LoadAsset<GameObject>("BlinkPredictionEffect");
+            blinkPredictionEffect.transform.Find("Effect").GetComponent<ParticleSystemRenderer>().material = Addressables.LoadAssetAsync<Material>("RoR2/Base/Imp/matImpPortalEffect.mat").WaitForCompletion();
+            blinkPredictionEffect.transform.Find("Embers").GetComponent<ParticleSystemRenderer>().material = Addressables.LoadAssetAsync<Material>("RoR2/Base/Imp/matImpDust.mat").WaitForCompletion();
         }
 
         private static GameObject CreateBloodExplosionEffect(string effectName, Material bloodMat, float scale = 1f)

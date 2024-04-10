@@ -29,6 +29,9 @@ namespace RedGuyMod.SkillStates.Ravager
             base.gameObject.layer = LayerIndex.defaultLayer.intVal;
             base.characterMotor.Motor.RebuildCollidableLayers();
 
+            base.PlayAnimation("FullBody, Override Soft", "Blink");
+            Util.PlaySound("sfx_ravager_sonido", this.gameObject);
+
             base.OnExit();
 
             EffectData effectData = new EffectData();
@@ -36,7 +39,7 @@ namespace RedGuyMod.SkillStates.Ravager
             effectData.origin = Util.GetCorePosition(this.gameObject);
             EffectManager.SpawnEffect(EntityStates.ImpMonster.BlinkState.blinkPrefab, effectData, false);
 
-            this.characterMotor.velocity = Vector3.up * 10f;
+            if (!this.isGrounded) this.characterMotor.velocity = Vector3.up * 10f;
 
             if (this.characterModel) this.characterModel.invisibilityCount--;
 

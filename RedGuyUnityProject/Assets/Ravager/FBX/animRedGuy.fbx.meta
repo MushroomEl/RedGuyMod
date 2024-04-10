@@ -101,6 +101,8 @@ ModelImporter:
     100190: meshSwordVoid
     100192: meshFist
     100194: meshVoidWrap2
+    100196: meshGuerrilla
+    100198: meshMachete
     400000: //RootNode
     400002: Armature
     400004: base
@@ -199,6 +201,8 @@ ModelImporter:
     400190: meshSwordVoid
     400192: meshFist
     400194: meshVoidWrap2
+    400196: meshGuerrilla
+    400198: meshMachete
     2100000: Material.001
     2100002: matImpBoss
     2100004: Material.002
@@ -211,6 +215,9 @@ ModelImporter:
     2100018: Default-Material
     2100020: Material.006
     2100022: Material.007
+    2100024: Material.008
+    2100026: matSlugger.002
+    2100028: matSlugger.001
     2300000: meshBodyAlt
     2300002: meshGunB
     2300004: meshSwordB
@@ -241,6 +248,8 @@ ModelImporter:
     4300034: meshSwordVoid
     4300036: meshFist
     4300038: meshVoidWrap2
+    4300040: meshGuerrilla
+    4300042: meshMachete
     7400000: Armature|AimPitch
     7400002: Armature|AimYaw
     7400004: Armature|aPose
@@ -354,6 +363,15 @@ ModelImporter:
     7400220: Armature|ClingHealLow
     7400222: Armature|ClingChargeBeam
     7400224: Armature|ClingChargeBeamMax
+    7400226: Armature|BlinkEnd
+    7400228: Armature|IdleAlt
+    7400230: Armature|IdleInAlt
+    7400232: Armature|RestIdleAlt
+    7400234: Armature|RestIdleInAlt
+    7400236: Armature|Slash1Crit
+    7400238: Armature|Slash2Crit
+    7400240: Armature|BlinkCharge
+    7400242: Armature|SpinSlashGroundCrit
     9500000: //RootNode
     10800000: Sun
     10800002: Sun.001
@@ -374,6 +392,8 @@ ModelImporter:
     13700028: meshSwordVoid
     13700030: meshVoidWrap
     13700032: meshVoidWrap2
+    13700034: meshGuerrilla
+    13700036: meshMachete
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2609670058
+CRC: 2954741749
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f664c4683089b571edea89b80100bf98
+    Hash: ae5590e4f9c8259fe1f4997b33ffafb3
   TypeTreeHash:
     serializedVersion: 2
     Hash: f486804d8030e363181b10babec2be60
@@ -66,6 +66,7 @@ ClassTypes:
 - Class: 319
   Script: {instanceID: 0}
 Assets:
+- Assets/Ravager/FBX/RestIdleAlt.anim
 - Assets/Ravager/Textures/texBodyEmission.png
 - Assets/Ravager/Icons/texBlinkIcon.png
 - Assets/Ravager/FBX/meshImpWrap.mesh
@@ -83,6 +84,7 @@ Assets:
 - Assets/Ravager/VFX/matBlackLightning.mat
 - Assets/Ravager/Animations/SprintF.anim
 - Assets/Ravager/Animations/maskRedGuySpike2.mask
+- Assets/Ravager/VFX/BlinkPredictionEffect.prefab
 - Assets/Ravager/Animations/Spike2Idle.anim
 - Assets/Ravager/Materials/matBodyAlt.mat
 - Assets/Ravager/HUD/Textures/texBulletIndicator.png
@@ -98,18 +100,22 @@ Assets:
 - Assets/Ravager/Icons/texSpinSlashIcon2.png
 - Assets/Ravager/HUD/Textures/texWhite.png
 - Assets/Ravager/Materials/matPlaceholder.mat
+- Assets/Ravager/Textures/texSellsword.png
 - Assets/Ravager/RavagerDisplay.prefab
 - Assets/Ravager/Textures/texSwordAlt.png
 - Assets/Ravager/Icons/texSpinSlashIcon.png
 - Assets/Ravager/FBX/RedGuySkins.fbx
+- Assets/Ravager/FBX/IdleAlt.anim
 - Assets/Ravager/Animations/LightImpact.anim
 - Assets/Ravager/Icons/texGrabIconScepter.png
 - Assets/Ravager/VFX/ChargeSphere.prefab
+- Assets/Ravager/Icons/texSellswordIcon.png
 - Assets/Ravager/Icons/texSlashIcon2.png
 - Assets/Ravager/Icons/texPunchIcon.png
 - Assets/Ravager/Textures/texSword.png
 - Assets/Ravager/Icons/texMonsoonSkin.png
 - Assets/Ravager/Textures/texBodyPrestige.png
+- Assets/Ravager/Materials/matSellsword.mat
 - Assets/Ravager/FBX/meshDivineWheel.mesh
 - Assets/Ravager/Icons/texConfirmIcon.png
 - Assets/Ravager/FBX/meshSwordAlt.mesh
@@ -132,6 +138,7 @@ Assets:
 - Assets/Ravager/FBX/meshVoidWrap2.mesh
 - Assets/Ravager/Animations/RestIdle.anim
 - Assets/Ravager/Icons/texPunchIcon2.png
+- Assets/Ravager/FBX/meshSellsword.mesh
 - Assets/Ravager/Animations/animRedGuyCSS.controller
 - Assets/Ravager/Animations/FireBeamLoop.anim
 - Assets/Ravager/Materials/matGuerrilla.mat
@@ -150,6 +157,7 @@ Assets:
 - Assets/Ravager/HUD/ChargeRing.prefab
 - Assets/Ravager/Textures/texGuerillaEmission.png
 - Assets/Ravager/FBX/meshSword.mesh
+- Assets/Ravager/FBX/meshLaserMachete.mesh
 - Assets/Ravager/Textures/texBodyVoid.png
 - Assets/Ravager/FBX/meshBodyVoid.mesh
 - Assets/Ravager/Icons/texPassiveIcon.png
@@ -181,6 +189,7 @@ Assets:
 - Assets/Ravager/Icons/texVoidSkin.png
 - Assets/Ravager/Icons/texGuerrillaSkin.png
 - Assets/Ravager/Animations/Dance.anim
+- Assets/Ravager/Textures/texSellswordEmission.png
 - Assets/Ravager/FBX/meshBodyVoid2.mesh
 - Assets/Ravager/Icons/texHealIcon2.png
 - Assets/Ravager/Materials/matSwordPrestige.mat

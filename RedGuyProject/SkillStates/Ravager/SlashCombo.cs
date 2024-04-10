@@ -126,9 +126,14 @@ namespace RedGuyMod.SkillStates.Ravager
 
         protected override void PlayAttackAnimation()
         {
-            if (this.swingIndex == 1) base.PlayCrossfade("Gesture, Override", "Slash2", "Slash.playbackRate", this.duration, 0.1f);
-            else if (this.swingIndex == 0) base.PlayCrossfade("Gesture, Override", "Slash1", "Slash.playbackRate", this.duration, 0.1f);
-            else base.PlayCrossfade("Gesture, Override", "SpinSlash", "Slash.playbackRate", this.duration, 0.1f);
+            string animString = "SpinSlash";
+
+            if (this.swingIndex == 0) animString = "Slash1";
+            if (this.swingIndex == 1) animString = "Slash2";
+
+            if (this.isCrit) animString += "Crit";
+
+            base.PlayCrossfade("Gesture, Override", animString, "Slash.playbackRate", this.duration, 0.1f);
         }
 
         protected override void SetNextState()
