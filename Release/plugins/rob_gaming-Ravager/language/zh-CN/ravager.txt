@@ -1,0 +1,111 @@
+{
+	strings: {
+ 	 "ROB_RAVAGER_BODY_NAME": "掠夺者",
+ 	 "ROB_RAVAGER_BODY_DESCRIPTION": "掠夺者是一位敏捷的近战斗士，他能通过杀死敌人来治愈自己，从而在战场中存活下去。<color=#CCD3E0>\n\n< ! > 蹬墙跳是对付空中敌人的绝佳手段。\n\n< ! > 劈裂可以规避即将到来的高能打击并打出大量伤害。\n\n< ! > 如果你不能让血池充分填充，凝血会很有帮助，但它也可以被动生效以保持你的状态。\n\n< ! > 对治疗能力有极高的要求，所以尽可能获取治疗物品。",
+ 	 "ROB_RAVAGER_BODY_SUBTITLE": "冷酷篡夺者",
+ 	 "ROB_RAVAGER_BODY_LORE": "掠夺者的力量不属于自己...\n\n...相反，他生来就带着一把被诅咒的血色武士刀。 但是有一天他去了便便次元，遇到了邪恶的力量.....\n\n他最终从便便次元中逃了出来，并驾驭了这种可怕的邪恶力量，随后他乘坐Petrichor V飞船并欲要毁灭宇宙。",
+ 	 "ROB_RAVAGER_BODY_OUTRO_FLAVOR": "..于是他离开了，去寻找并亵渎新的世界。",
+ 	 "ROB_RAVAGER_BODY_OUTRO_FAILURE": "..就这样，他消失了，他荒谬的暴力终于结束了。",
+
+ 	 "ROB_RAVAGER_BODY_DEFAULT_SKIN_NAME": "默认",
+ 	 "ROB_RAVAGER_BODY_MONSOON_SKIN_NAME": "虚空之触",
+     "ROB_RAVAGER_BODY_MONSOON_ALTERNATE_SKIN_NAME": "虚空之触 EX",
+     "ROB_RAVAGER_BODY_TYPHOON_SKIN_NAME": "[数据删除]",
+ 	 "ROB_RAVAGER_BODY_VOID_SKIN_NAME": "虚空之子",
+	 "ROB_RAVAGER_BODY_SELLSWORD_SKIN_NAME": "雇佣兵",
+	 "ROB_RAVAGER_BODY_GUERRILLA_SKIN_NAME": "游击队",
+ 	 "ROB_RAVAGER_BODY_MAHORAGA_SKIN_NAME": "天命者",
+ 	 "ROB_RAVAGER_BODY_MINECRAFT_SKIN_NAME": "我的世界",
+
+     "ROB_RAVAGER_BODY_BLOODWELL_NAME": "血池",
+     "ROB_RAVAGER_BODY_BLOODWELL_DESCRIPTION": "掠夺者通过攻击来积累 <style=cIsHealth>血液</style> ，血池积满时消耗并治疗你 <style=cIsHealing>75% 已损失生命值</style> 并短时间 <style=cIsDamage>强化你的技能</style> 。",
+     "ROB_RAVAGER_BODY_BLOODWELL2_NAME": "灵液罐",
+     "ROB_RAVAGER_BODY_BLOODWELL2_DESCRIPTION": "掠夺者通过攻击来积累 <style=cIsHealth>血液</style>，血池积满时消耗并治疗你 <style=cIsHealing>100% 最大生命值</style> 并短时间<style=cIsDamage>强化你的技能</style>。 <style=cIsHealth>攻击时消耗更快</style>。",
+     "ROB_RAVAGER_BODY_PARASITE_NAME": "寄生",
+     "ROB_RAVAGER_BODY_PARASITE_DESCRIPTION": "<style=cIsHealth>它很饥饿 ...</style>",
+ 	 "ROB_RAVAGER_BODY_PASSIVE_NAME": "超凡体能",
+ 	 "ROB_RAVAGER_BODY_PASSIVE_DESCRIPTION": "掠夺者可以 <style=cIsUtility>从墙上跳下来</style> 并 <style=cIsHealth>震击敌人</style>。 蹬墙跳可以蓄能来<style=cIsDamage>远距离跳跃</style>。",
+     "ROB_RAVAGER_BODY_PASSIVE2_NAME": "扭曲突变",
+     "ROB_RAVAGER_BODY_PASSIVE2_DESCRIPTION": "跳在空中可以蓄能并 <style=cIsUtility>向前闪现</style>，每次跳跃仅生效一次。降落时 <style=cIsDamage>攻击</style> 可刷新此技能。",
+     "ROB_RAVAGER_BODY_PASSIVE3_NAME": "扭曲突变 (后遗症)",
+     "ROB_RAVAGER_BODY_PASSIVE3_DESCRIPTION": "<style=cIsHealth>消耗 5% 当前生命值。</style>跳在空中可以蓄能并 <style=cIsUtility>向前闪现</style>，每次跳跃仅生效一次。降落时<style=cIsDamage>攻击</style>可刷新此技能。",
+     "ROB_RAVAGER_BODY_CONFIRM_NAME": "确认",
+ 	 "ROB_RAVAGER_BODY_CONFIRM_DESCRIPTION": "继续当前技能。",
+ 	 "ROB_RAVAGER_BODY_CANCEL_NAME": "取消",
+ 	 "ROB_RAVAGER_BODY_CANCEL_DESCRIPTION": "取消当前技能。",
+
+ 	 "ROB_RAVAGER_BODY_PRIMARY_SLASH_NAME": "劈砍",
+ 	 "ROB_RAVAGER_BODY_PRIMARY_SLASH_DESCRIPTION": "向前攻击造成 <style=cIsDamage> 230% 伤害</style>。 在 <style=cIsUtility>蹬墙跳蓄能</style> 时使用可抓住 <style=cIsDamage>支撑点</style>。",
+     "ROB_RAVAGER_BODY_PRIMARY_SLASHCOMBO_NAME": "肢解",
+     "ROB_RAVAGER_BODY_PRIMARY_SLASHCOMBO_DESCRIPTION": "向前攻击造成 <style=cIsDamage> 180% 伤害</style>。 每 3 次攻击 <style=cIsUtility>击晕敌人</style> 并造成 <style=cIsDamage> 390% 伤害</style>。",
+	 
+ 	 "ROB_RAVAGER_BODY_SECONDARY_SPINSLASH_NAME": "劈裂",
+ 	 "ROB_RAVAGER_BODY_SECONDARY_SPINSLASH_DESCRIPTION": "箭步向前，进行大范围 <style=cIsUtility>击晕</style> 并造成 <style=cIsDamage> 500% 伤害</style>。",
+
+	 "ROB_RAVAGER_BODY_UTILITY_HEAL_NAME": "凝血",
+	 "ROB_RAVAGER_BODY_UTILITY_HEAL_DESCRIPTION": "凝结 <style=cIsHealth>血池</style>，<style=cIsHealing>治疗自己</style> 并消耗血池。",
+	 "ROB_RAVAGER_BODY_UTILITY_BEAM_NAME": "反斥",
+	 "ROB_RAVAGER_BODY_UTILITY_BEAM_DESCRIPTION": "<style=cIsHealth>吸收</style> 来袭的 <style=cIsUtility>弹射物</style> ，发动毁灭性的爆炸，完全蓄能可造成 <style=cIsDamage> 5000% 伤害</style> 。",
+     "ROB_RAVAGER_BODY_UTILITY_SWAP_NAME": "移行",
+     "ROB_RAVAGER_BODY_UTILITY_SWAP_DESCRIPTION": "和 <style=cIsUtility>任何实体</style>交换位置。",
+	 "ROB_RAVAGER_BODY_UTILITY_SNATCH_NAME": "鬼手",
+	 "ROB_RAVAGER_BODY_UTILITY_SNATCH_DESCRIPTION": "发射你的 <style=cIsDamage>鬼手</style> 抓住前方的敌人， <style=cIsUtility>并将自己拉向命中的敌人</style>。",
+
+	 "ROB_RAVAGER_BODY_SPECIAL_GRAB_NAME": "冷血",
+	 "ROB_RAVAGER_BODY_SPECIAL_GRAB_DESCRIPTION": "前冲并 <style=cIsUtility>抓住</style> 近距离的敌人， 然后猛击造成 <style=cIsDamage> 1000% 伤害</style>。 如果此技能 <style=cIsHealth>击杀</style>敌人，则治愈 <style=cIsHealing> 10%  最大生命值</style>。",
+	 "ROB_RAVAGER_BODY_SPECIAL_GRAB_SCEPTER_NAME": "恶行",
+	 "ROB_RAVAGER_BODY_SPECIAL_GRAB_SCEPTER_DESCRIPTION": "扔出手雷 <style=cIsUtility>击晕</style> 敌人 并造成 <style=cIsDamage> 1000% 伤害</style>。 <style=cIsUtility>最多可持有 2 枚。</style>" + Helpers.ScepterDescription("替换为扔出燃烧手雷。",
+     "ROB_RAVAGER_BODY_SPECIAL_PUNCH_NAME": "连拳",
+     "ROB_RAVAGER_BODY_SPECIAL_PUNCH_DESCRIPTION": "前冲并 <style=cIsUtility>击打</style>敌人，造成 <style=cIsDamage> 1250% 伤害</style> 并产生 <style=cIsUtility>冲击波</style> 以相同伤害穿透后方敌人。 如果此技能 <style=cIsHealth>击杀</style> 敌人，则治愈 <style=cIsHealing>10% 最大生命值</style>。",
+	 "ROB_RAVAGER_BODY_SPECIAL_THROW_NAME": "猛摔",
+	 "ROB_RAVAGER_BODY_SPECIAL_THROW_DESCRIPTION": "前冲并 <style=cIsUtility>抓住</style> 近距离的敌人，然后扔出敌人造成 <style=cIsDamage> 1000% 伤害</style> 。 如果此技能 <style=cIsHealth>击杀</style> 敌人，则治愈 <style=cIsHealing> 10% 最大生命值</style>。",
+ 
+     "KEYWORD_REDGUY_M12": "<style=cKeywordName>支撑点</style><style=cSub>在蹬墙跳蓄能时抓住 <style=cIsUtility>支撑点</style>。 释放时向前冲并基于当前速度造成 <style=cIsDamage>5x 伤害</style>。",
+	 "KEYWORD_REDGUY_M1": "<style=cKeywordName>赋予效果</style><style=cSub>速度加快。",
+	 "KEYWORD_REDGUY_M2": "<style=cKeywordName>赋予效果 (地面)</style><style=cSub>成功触发时 <style=cIsUtility>增加移动距离</style> 并 <style=cIsDamage>增加 50% 伤害</style>，可叠加。",
+	 "KEYWORD_REDGUY_M2B": "<style=cKeywordName>赋予效果 (空中)</style><style=cSub>对 <style=cIsUtility>低生命敌人</style> 伤害增加并增加移动距离。",
+	 "KEYWORD_REDGUY_HEAL":  "<style=cKeywordName>赋予效果</style><style=cSub>爆炸造成 <style=cIsDamage> 2400% 伤害</style>。",
+	 "KEYWORD_REDGUY_BEAM":  "<style=cKeywordName>赋予效果</style><style=cSub>蓄能速度加快。",
+	 "KEYWORD_REDGUY_GRAB": "<style=cKeywordName>赋予效果</style><style=cSub>可抓住Boss。 在地面上拖拽敌人，随着时间造成伤害。",
+	 "KEYWORD_REDGUY_GRAB2": "<style=cKeywordName>首领特攻</style><style=cSub>对Boss释放可<style=cIsDamage>附着</style> 敌人并进入虚幻形态。",
+     "KEYWORD_REDGUY_PUNCH": "<style=cKeywordName>赋予效果</style><style=cSub>打出一连串的拳击，造成严重伤害。",   
+
+	 "ROB_RAVAGER_BODY_UNLOCKABLE_UNLOCKABLE_NAME": "末日噩梦",
+	 "ROB_RAVAGER_BODY_UNLOCKABLE_ACHIEVEMENT_NAME": "末日噩梦",
+	 "ROB_RAVAGER_BODY_UNLOCKABLE_ACHIEVEMENT_DESC": "对一个敌人施加50层流血效果。",
+	 
+	 "ROB_RAVAGER_BODY_MONSOONUNLOCKABLE_UNLOCKABLE_NAME": "掠夺者：精通",
+	 "ROB_RAVAGER_BODY_MONSOONUNLOCKABLE_ACHIEVEMENT_NAME": "掠夺者：精通",
+	 "ROB_RAVAGER_BODY_MONSOONUNLOCKABLE_ACHIEVEMENT_DESC": "作为掠夺者，在季风难度完成游戏或抹除自己。",
+	 
+     "ROB_RAVAGER_BODY_TYPHOON_UNLOCKABLE_UNLOCKABLE_NAME": "掠夺者：大师精通",
+     "ROB_RAVAGER_BODY_TYPHOON_UNLOCKABLE_ACHIEVEMENT_NAME": "掠夺者：大师精通",
+     "ROB_RAVAGER_BODY_TYPHOON_UNLOCKABLE_ACHIEVEMENT_DESC": "作为掠夺者，在台风难度或月食完成游戏或抹除自己。\n<color=#8888>台风及以上难度生效。</color>",
+	 
+	 "ROB_RAVAGER_BODY_PUNCH_UNLOCKABLE_UNLOCKABLE_NAME": "掠夺者：火焰之路",
+     "ROB_RAVAGER_BODY_PUNCH_UNLOCKABLE_ACHIEVEMENT_NAME": "掠夺者：火焰之路",
+     "ROB_RAVAGER_BODY_PUNCH_UNLOCKABLE_ACHIEVEMENT_DESC": "作为掠夺者，在一次抓取中将一名敌人摔在地上 3 次以上。",
+     
+	 "ROB_RAVAGER_BODY_THROW_UNLOCKABLE_UNLOCKABLE_NAME": "掠夺者：饥饿野兽",
+     "ROB_RAVAGER_BODY_THROW_UNLOCKABLE_ACHIEVEMENT_NAME": "掠夺者：饥饿野兽",
+     "ROB_RAVAGER_BODY_THROW_UNLOCKABLE_ACHIEVEMENT_DESC": "作为掠夺者，一次消灭 8 个或更多敌人。",
+	 
+	 "ROB_RAVAGER_BODY_BEAM_UNLOCKABLE_UNLOCKABLE_NAME": "掠夺者：心如止水",
+	 "ROB_RAVAGER_BODY_BEAM_UNLOCKABLE_ACHIEVEMENT_NAME": "掠夺者：心如止水",
+	 "ROB_RAVAGER_BODY_BEAM_UNLOCKABLE_ACHIEVEMENT_DESC": "作为掠夺者，在没有填满血池的情况下完成一个关卡。",
+	 
+	 "ROB_RAVAGER_BODY_WALLJUMP_UNLOCKABLE_UNLOCKABLE_NAME": "掠夺者：最强的猴子",
+	 "ROB_RAVAGER_BODY_WALLJUMP_UNLOCKABLE_ACHIEVEMENT_NAME": "掠夺者：最强的猴子",
+	 "ROB_RAVAGER_BODY_WALLJUMP_UNLOCKABLE_ACHIEVEMENT_DESC": "作为掠夺者，在不触地的情况下跳跃 20 次。",
+	 
+	 "ROB_RAVAGER_BODY_SUIT_UNLOCKABLE_UNLOCKABLE_NAME": "掠夺者：我所有的伙伴",
+	 "ROB_RAVAGER_BODY_SUIT_UNLOCKABLE_ACHIEVEMENT_NAME": "掠夺者：我所有的伙伴",
+	 "ROB_RAVAGER_BODY_SUIT_UNLOCKABLE_ACHIEVEMENT_DESC": "作为掠夺者，一次有 15 个盟友活着。",
+	 
+	 "ROB_RAVAGER_BODY_VOID_UNLOCKABLE_UNLOCKABLE_NAME": "掠夺者：来自虚无",
+	 "ROB_RAVAGER_BODY_VOID_UNLOCKABLE_ACHIEVEMENT_NAME": "掠夺者：来自虚无",
+	 "ROB_RAVAGER_BODY_VOID_UNLOCKABLE_ACHIEVEMENT_DESC": "作为掠夺者，逃离天文馆。",
+
+	 "ROB_RAVAGER_BODY_LOADOUT_SKILL_MISC": "被动技能",
+	 }
+}
